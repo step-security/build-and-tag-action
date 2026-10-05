@@ -1,9 +1,9 @@
 import getTagName from '../src/lib/get-tag-name'
 import { generateToolkit } from './helpers'
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from '../src/lib/tools'
 
 describe('update-tag', () => {
-  let tools: Toolkit
+  let tools: Tools
 
   beforeEach(() => {
     tools = generateToolkit()

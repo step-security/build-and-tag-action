@@ -1,10 +1,10 @@
 import nock from 'nock'
 import createOrUpdateRef from '../src/lib/create-or-update-ref'
 import { generateToolkit } from './helpers'
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from '../src/lib/tools'
 
 describe('create-or-update-ref', () => {
-  let tools: Toolkit
+  let tools: Tools
 
   beforeEach(() => {
     tools = generateToolkit()

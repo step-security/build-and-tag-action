@@ -1,7 +1,7 @@
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from './tools'
 import readFile from './read-file'
 
-export default async function createCommit(tools: Toolkit) {
+export default async function createCommit(tools: Tools) {
   const { main } = tools.getPackageJSON<{ main?: string }>()
 
   if (!main) {

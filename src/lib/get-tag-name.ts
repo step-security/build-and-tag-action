@@ -1,6 +1,6 @@
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from './tools'
 
-export default function getTagName(tools: Toolkit): string {
+export default function getTagName(tools: Tools): string {
   if (tools.inputs.tag_name) {
     return tools.inputs.tag_name
   }

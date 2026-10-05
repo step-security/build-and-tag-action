@@ -1,7 +1,7 @@
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from './tools'
 
 export default async function updateTag(
-  tools: Toolkit,
+  tools: Tools,
   sha: string,
   tagName: string
 ) {

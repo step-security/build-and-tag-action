@@ -1,10 +1,6 @@
-import { Toolkit } from 'actions-toolkit'
-import { Signale } from 'signale'
+import { createTools } from '../src/lib/tools'
 
 export function generateToolkit() {
-  const tools = new Toolkit({
-    logger: new Signale({ disabled: true })
-  })
-
-  return tools
+  // Use the global fetch so that nock can intercept the requests
+  return createTools({ request: { fetch: globalThis.fetch } })
 }
