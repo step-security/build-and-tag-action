@@ -1,10 +1,10 @@
 import nock from 'nock'
 import createCommit from '../src/lib/create-commit'
 import { generateToolkit } from './helpers'
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from '../src/lib/tools'
 
 describe('create-commit', () => {
-  let tools: Toolkit
+  let tools: Tools
   let treeParams: any
   let commitParams: any
 

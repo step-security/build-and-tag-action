@@ -1,10 +1,10 @@
 import nock from 'nock'
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from '../src/lib/tools'
 import buildAndTagAction from '../src/lib'
 import { generateToolkit } from './helpers'
 
 describe('build-and-tag-action', () => {
-  let tools: Toolkit
+  let tools: Tools
 
   beforeEach(() => {
     nock.cleanAll()

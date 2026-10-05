@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@actions/core": "^2.0.3",
-    "actions-toolkit": "^6.0.1",
+    "@actions/github": "^8.0.1",
     "axios": "^1.20.0",
     "semver": "^7.3.2"
   },
@@ -21,7 +21,7 @@
     "@vercel/ncc": "^0.45.0",
     "jest": "^30.5.2",
     "js-yaml": "^5.4.1",
-    "nock": "^13.0.5",
+    "nock": "^14.0.17",
     "ts-jest": "^29.4.14",
     "typescript": "^6.0.3"
   },
@@ -39,10 +39,21 @@
       "json"
     ],
     "transform": {
-      ".+\\.tsx?$": ["ts-jest", { "isolatedModules": true }]
+      ".+\\.[tj]sx?$": [
+        "ts-jest",
+        {
+          "isolatedModules": true,
+          "tsconfig": {
+            "allowJs": true
+          }
+        }
+      ]
     },
     "testMatch": [
       "<rootDir>/tests/**/*.test.(ts|js)"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@octokit|universal-user-agent|before-after-hook|fast-content-type-parse|json-with-bigint|content-type)/)"
     ]
   }
 }

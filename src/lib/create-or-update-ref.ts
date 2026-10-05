@@ -1,7 +1,7 @@
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from './tools'
 
 export default async function createOrUpdateRef(
-  tools: Toolkit,
+  tools: Tools,
   sha: string,
   tagName: string
 ) {
@@ -12,7 +12,7 @@ export default async function createOrUpdateRef(
     ref: refName
   })
 
-  const matchingRef = matchingRefs.find((refObj) => {
+  const matchingRef = matchingRefs.find((refObj: { ref: string }) => {
     return refObj.ref.endsWith(refName)
   })
 

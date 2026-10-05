@@ -1,10 +1,10 @@
 import nock from 'nock'
 import updateTag from '../src/lib/update-tag'
 import { generateToolkit } from './helpers'
-import { Toolkit } from 'actions-toolkit'
+import { Tools } from '../src/lib/tools'
 
 describe('update-tag', () => {
-  let tools: Toolkit
+  let tools: Tools
   let params: any
 
   beforeEach(() => {
