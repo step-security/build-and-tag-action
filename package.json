@@ -16,7 +16,7 @@
   "devDependencies": {
     "@tsconfig/node24": "^24.0.5",
     "@types/jest": "^30.0.0",
-    "@types/js-yaml": "^3.12.5",
+    "@types/js-yaml": "^4.0.9",
     "@types/semver": "^7.3.4",
     "@vercel/ncc": "^0.45.0",
     "jest": "^30.5.2",
