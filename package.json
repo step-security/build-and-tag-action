@@ -20,7 +20,7 @@
     "@types/semver": "^7.3.4",
     "@vercel/ncc": "^0.45.0",
     "jest": "^30.5.2",
-    "js-yaml": "^5.4.1",
+    "js-yaml": "^5.4.3",
     "nock": "^14.0.17",
     "ts-jest": "^29.4.14",
     "typescript": "^6.0.3"
